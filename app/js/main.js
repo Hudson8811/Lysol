@@ -7,7 +7,23 @@ $('.instruction__row').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow: '<div class="slide-arrow arrow-next"><svg class="icon icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-right"></use></svg></div>',
-  prevArrow: '<div class="slide-arrow arrow-prev"><svg class="icon icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-left"></use></svg></div>'
+  prevArrow: '<div class="slide-arrow arrow-prev"><svg class="icon icon-arrow-right"><use xlink:href="images/sprite.svg#icon-arrow-left"></use></svg></div>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,        
+      }
+    },
+    {
+      breakpoint: 650,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,        
+      }
+    },
+  ]
 });
 
 $(window).scroll(function() {
@@ -23,21 +39,24 @@ $(window).scroll(function() {
 
   $('#wrapper').fullpage({
     autoScrolling:true,
-    scrollHorizontally: true
+    scrollHorizontally: true,
+    responsiveWidth: 1024
   });
 
+  
 
-  $('[data-fancybox="wash"]').fancybox({
-    btnTpl: {
+
+  // $('[data-fancybox="wash"]').fancybox({
+  //   btnTpl: {
   
-      arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left prev" title="{{PREV}}">' +
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>' +
-        "</button>",
+  //     arrowLeft: '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left prev" title="{{PREV}}">' +
+  //       '<i class="fa fa-angle-left" aria-hidden="true"></i>' +
+  //       "</button>",
   
-      arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right next" title="{{NEXT}}">' +
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>' +
-        "</button>"
+  //     arrowRight: '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right next" title="{{NEXT}}">' +
+  //       '<i class="fa fa-angle-right" aria-hidden="true"></i>' +
+  //       "</button>"
   
-    }
+  //   }
   
-  });
+  // });
