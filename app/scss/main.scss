@@ -126,6 +126,10 @@
         left: 0;
         width: vw(53);
         height: vw(199);
+        @include for-tiny-tablet{
+            top: auto;
+            bottom: 0;
+        }
     }
     &__inner-img-2{
         left: 0;
@@ -144,6 +148,12 @@
         top: vw(478);
         width: vw(151);
         height: vw(151);
+        @include for-tiny-tablet{
+            left: vw3(76);
+            top: vw3(80);
+            width: vw3(22);
+            height: vw3(22);
+        }
     }
     &__inner-img-5{
         left: vw(772);
@@ -156,18 +166,36 @@
         top: vw(834);
         width: vw(82);
         height: vw(82);
+        @include for-tiny-tablet{
+            left: vw3(256);
+            top: vw3(400);
+            width: vw3(16);
+            height: vw3(16);
+        }
     }
     &__inner-img-7{
         left: vw(1210);
         top: vw(104);
         width: vw(56);
         height: vw(56);
+        @include for-tiny-tablet{
+            left: vw3(267);
+            top: vw3(189);
+            width: vw3(13);
+            height: vw3(13);
+        }
     }
     &__inner-img-8{
         left: vw(1466);
         top: vw(10);
         width: vw(82);
         height: vw(82);
+        @include for-tiny-tablet{
+            left: vw3(274);
+            top: vw3(167);
+            width: vw3(20);
+            height: vw3(20);
+        }
     }
     &__text-block{
         max-width: vw(630);
@@ -1004,30 +1032,61 @@
         height: vw(143);
         left: vw(100);
         top: vw(150);
+        @include for-tiny-tablet{
+            width: vw3(38);
+            height: vw3(53);
+            left: vw3(100);
+            top: vw3(5);
+            transform: rotate(270deg);
+        }
     }
     &__microbes-2{
         width: vw(129);
         height: vw(143);
         left: vw(90);
         top: vw(786);
+        @include for-tiny-tablet{
+            width: vw3(60);
+            height: vw3(67);
+            left: vw3(25);
+            top: vw3(432);
+        }
     }
     &__microbes-3{
         width: vw(69);
         height: vw(71);
         right: vw(132);
         top: vw(170);
+        @include for-tiny-tablet{
+            width: vw3(40);
+            height: vw3(42);
+            right: vw3(40);
+            top: vw3(55);
+        }
     }
     &__microbes-4{
         width: vw(96);
         height: vw(136);
         right: vw(236);
         top: vw(520);
+        @include for-tiny-tablet{
+            width: vw3(38);
+            height: vw3(53);
+            right: vw3(30);
+            top: vw3(405);
+        }
     }
     &__microbes-5{
         width: vw(110);
         height: vw(114);
         right: vw(36);
         bottom: vw(123);
+        @include for-tiny-tablet{
+            width: vw3(43);
+            height: vw3(45);
+            right: vw3(11);
+            bottom: vw3(149);
+        }
     }
     &__inner{
         display: flex;
@@ -1038,6 +1097,12 @@
     &__title{
         text-align: left;
         color: $white;
+        br{
+            display: none;
+            @include for-tiny-tablet{
+                display: inline;
+            }
+        }
     }
     &__text-block{
         width: 50%;
