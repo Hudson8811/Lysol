@@ -4869,6 +4869,10 @@ h2 {
   }
 }
 
+html, body {
+  overflow: hidden !important;
+}
+
 .header {
   position: fixed;
   top: 1.45833vw;
@@ -5241,8 +5245,11 @@ h2 {
   }
 }
 
-.instruction {
-  padding: 5.52083vw 0 6.77083vw;
+.instruction .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 @media (max-width: 1023px) {
@@ -5254,12 +5261,6 @@ h2 {
 @media (max-width: 650px) {
   .instruction {
     padding: 6.13333vw 0 7.46667vw;
-  }
-}
-
-@media (max-height: 600px) and (min-width: 1024px) {
-  .instruction {
-    padding: 4.16667vh 0 7.77778vh;
   }
 }
 
@@ -5658,8 +5659,15 @@ h2 {
   padding: 0 1.5625vw;
 }
 
+.interview {
+  height: 100%;
+}
+
 .interview__inner {
-  padding: 3.80208vw 0 7.08333vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 1023px) {
@@ -5671,12 +5679,6 @@ h2 {
 @media (max-width: 650px) {
   .interview__inner {
     padding: 9.6vw 0 21.33333vw;
-  }
-}
-
-@media (max-height: 600px) and (min-width: 1024px) {
-  .interview__inner {
-    padding: 10vh 0 28.88889vh;
   }
 }
 
@@ -5716,7 +5718,7 @@ h2 {
 .interview__subtitle {
   margin-top: 1.04167vw;
   text-transform: none;
-  min-height: 10.20833vw;
+  min-height: 5.20833vw;
   line-height: 1.1;
 }
 

@@ -2,7 +2,7 @@
 @import "_libs";
 @import "_fonts";
 @import "_global";
-
+html, body { overflow: hidden !important}
 
 .header{
     position: fixed;
@@ -299,16 +299,19 @@
     
 }
 .instruction{
-    padding: vw(106) 0 vw(130);
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
     @include for-md{
         padding: vw2(23) 0 vw2(28);
     }
     @include for-tiny-tablet{
         padding: vw3(23) 0 vw3(28);
     }
-    @include for-sm-height{
-        padding: vh4(15) 0 vh4(28);
-    }  
+   
     &__row{
         margin-top: vw(92);
         @include for-md{
@@ -614,17 +617,21 @@
 
 
 .interview{
+    
+        height: 100%;
+    
     &__inner{
-        padding: vw(73) 0 vw(136);
+       
         @include for-md{
             padding: vw2(36) 0 vw2(80);
         }
         @include for-tiny-tablet{
             padding: vw3(36) 0 vw3(80);
         }  
-        @include for-sm-height{
-            padding: vh4(36) 0 vh4(104);
-        }
+        height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
     }
     &__total{
         margin-top: vw(30);
@@ -653,7 +660,7 @@
     &__subtitle{
         margin-top: vw(20);
         text-transform: none;
-        min-height: vw(196);
+        min-height: vw(100);
         line-height: 1.1;
         @extend %circe-bold;
         @include for-md{
@@ -1026,6 +1033,7 @@
     // }
     &__microbes{
         position: absolute;
+      
     }
     &__microbes-1{
         width: vw(102);
