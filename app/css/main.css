@@ -4873,6 +4873,12 @@ html, body {
   overflow: hidden !important;
 }
 
+@media (max-width: 1023px) {
+  html, body {
+    overflow: initial !important;
+  }
+}
+
 .header {
   position: fixed;
   top: 1.45833vw;

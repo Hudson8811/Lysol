@@ -2,7 +2,12 @@
 @import "_libs";
 @import "_fonts";
 @import "_global";
-html, body { overflow: hidden !important}
+html, body {
+    overflow: hidden !important;
+    @include for-md{
+        overflow: initial !important;
+    }
+}
 
 .header{
     position: fixed;
