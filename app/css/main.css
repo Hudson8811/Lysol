@@ -4460,7 +4460,6 @@ button {
   height: 100%;
   width: 100%;
   max-width: 100%;
-  z-index: 2;
 }
 
 .page-content {
@@ -4486,11 +4485,14 @@ button {
 }
 
 .header-fixed .logo__text {
-
-  
-  opacity: 0;
-  visibility: hidden;
+  /*position: absolute;
+        z-index: -1;
+        transform: translateX(-300%);
+        white-space: nowrap;*/
   transition: all .5s;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
 }
 
 h1 {
