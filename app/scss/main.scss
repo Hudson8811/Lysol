@@ -332,54 +332,27 @@ html, body {
     &__item{
         position: relative;
         max-width: vw(418);
-        height: vw(518);
-        padding: vw(162) vw(40) vw(48) vw(50);
+        height: vw(395);
+        padding: vw(50) vw(40) vw(48) vw(50);
         background-color: $bg-blue;
         border: vw(1.2199) solid $border-blue;
         border-radius: 30px;
         margin: 0 auto;
-        &::before{
-            content: "";
-            position: absolute;
-            width: vw(55);
-            height: vw(55);
-            border-radius: 50%;
-            background-color: $white;
-            border: vw(1.2199) solid $border-blue;
-            top: vw(25);
-            left: 50%;
-            transform: translateX(-50%);
-            @include for-md{
-                max-width: none;
-                width: vw2(25);
-                height: vw2(25);
-                top: vw2(15);
-            }
-            @include for-tiny-tablet{
-                width: vw3(25);
-                height: vw3(25);
-                top: vw3(15);
-            }
-            @include for-sm-height{
-                width: vh4(25);
-                height: vh4(25);
-                top: vh4(15);
-            }
-        }
+
         @include for-md{
-            padding: vw2(60) vw2(20) vw2(30);
+            padding: vw2(15) vw2(20) vw2(30);
             max-width: 100%;
-            height: vw2(240);
+            height: vw2(200);
         }
         @include for-tiny-tablet{
             display: block !important;
-            padding: vw3(60) vw3(20) vw3(30);
+            padding: vw3(30) vw3(20) vw3(30);
             // max-width: vw3(223);
-            height: vw3(276);
+            height: vw3(200);
         }
         @include for-sm-height{
-            padding: vh4(60) vh4(20) vh4(30);
-            height: vh4(250);
+            padding: vh4(30) vh4(20) vh4(30);
+            height: vh4(200);
         }
     }
     &__type{
