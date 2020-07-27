@@ -4883,6 +4883,10 @@ html, body {
   }
 }
 
+.blue {
+  background-color: #4CABE5;
+}
+
 .header {
   position: fixed;
   top: 1.45833vw;
@@ -6006,6 +6010,288 @@ html, body {
 @media (max-width: 650px) {
   .interview-second .interview__inner {
     padding-bottom: 22.66667vw;
+  }
+}
+
+.interview-result {
+  margin-bottom: 250px;
+}
+
+.interview-result__bubble {
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble {
+    display: none;
+  }
+}
+
+.interview-result__bubble-2 {
+  top: 17vw;
+  right: 21vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-2 {
+    display: block;
+    width: 34px;
+    height: 34px;
+    top: 124vw;
+    right: auto;
+    left: -6vw;
+  }
+}
+
+.interview-result__bubble-2--second {
+  top: 22vw;
+  right: 23vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-2--second {
+    top: 83vw;
+    right: 0;
+    left: auto;
+  }
+}
+
+.interview-result__bubble-6 {
+  top: 2vw;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-6 {
+    display: block;
+    width: 38px;
+    height: 38px;
+    left: 13vw;
+    top: 90vw;
+  }
+}
+
+.interview-result__bubble-6--second {
+  top: auto;
+  bottom: 12vw;
+  right: -1vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-6--second {
+    bottom: 129vw;
+    right: 0;
+    left: auto;
+  }
+}
+
+.interview-result__bubble-9 {
+  top: 15.5vw;
+  left: -6vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-9 {
+    display: block;
+    width: 13px;
+    height: 13px;
+    top: 109vw;
+    left: 7vw;
+  }
+}
+
+.interview-result__bubble-9--second {
+  bottom: 8vw;
+  left: 31.5vw;
+  top: auto;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-9--second {
+    top: 114vw;
+    right: 14vw;
+    left: auto;
+  }
+}
+
+.interview-result__bubble-9--third {
+  top: auto;
+  bottom: 23.5vw;
+  right: 25.5vw;
+  left: auto;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-9--third {
+    display: none;
+  }
+}
+
+.interview-result__bubble-10 {
+  top: 4vw;
+  left: 12vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-10 {
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 106vw;
+    left: auto;
+    right: 16vw;
+  }
+}
+
+.interview-result__bubble-11 {
+  bottom: 12vw;
+  left: 35vw;
+}
+
+.interview-result__bubble-12 {
+  top: 4vw;
+  right: 30vw;
+}
+
+.interview-result__bubble-13 {
+  top: 19vw;
+  right: -3vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__bubble-13 {
+    display: block;
+    top: auto;
+    right: auto;
+    bottom: 114vw;
+    left: -5vw;
+  }
+}
+
+.interview-result__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 35px;
+}
+
+@media (max-width: 767px) {
+  .interview-result__wrapper {
+    flex-direction: column;
+  }
+}
+
+.interview-result__left {
+  max-width: 905px;
+  margin-right: 130px;
+}
+
+@media (max-width: 767px) {
+  .interview-result__left {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .interview-result__left {
+    margin-right: 30px;
+  }
+}
+
+.interview-result__title {
+  font-size: 60px;
+  line-height: 48px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 650px) {
+  .interview-result__title {
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.interview-result__text {
+  font-size: 24px;
+}
+
+@media (max-width: 650px) {
+  .interview-result__text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.interview-result__buy {
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .interview-result__buy {
+    margin: 0 auto;
+    width: 123px;
+    height: 44px;
+  }
+}
+
+@media (min-width: 768px) {
+  .interview-result__buy {
+    margin-top: 50px;
+    width: 242px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interview-result__buy {
+    margin-top: 110px;
+  }
+}
+
+.interview-result__img-container {
+  width: 260.467vw;
+  height: 77.4vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__img-container {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interview-result__img-container {
+    width: 118.467vw;
+    height: 41.4vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .interview-result__img-container {
+    width: 78.467vw;
+  }
+}
+
+.interview-result__img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.interview-result__img-container--mobile {
+  display: none;
+  width: 46.467vw;
+  height: 77.4vw;
+}
+
+@media (max-width: 767px) {
+  .interview-result__img-container--mobile {
+    display: block;
+    margin: 40px auto;
   }
 }
 
