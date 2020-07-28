@@ -1158,9 +1158,9 @@ html, body {
         @include for-md{
             margin-left: vw2(20);
         }
-        @include for-tiny-tablet{
-            margin-left: vw3(20);
-        }
+        // @include for-tiny-tablet{
+        //     margin-left: vw3(20);
+        // }
         // @include for-sm-height{
         //     margin-left: vw4(20);
         // }
@@ -2016,4 +2016,42 @@ html, body {
         object-fit: cover;
     }
     
+}
+.disclaimer{
+    padding: vw(10) vw(80) vw(15);
+    height: auto !important;
+    width: 100%;
+    background-color: $bg-dark-grey;
+    @include for-md{
+        padding-bottom: vw2(15);
+    }
+    @include for-tiny-tablet{
+        padding-bottom: vw3(15);
+    }
+    .fp-tableCell{
+        height: auto !important;
+    }
+    &__text{
+        @extend %circe-regular;
+        font-size: vw(20);
+        line-height: vw(29);
+        color: rgba(0, 0, 0, 0.35);
+        @include for-md{
+            font-size: vw2(12);
+            line-height: vw2(16);
+        }
+        @include for-tiny-tablet{
+            font-size: vw3(12);
+            line-height: vw3(16);
+        }
+    }
+    &__text + &__text{
+        margin-top: vw(30);
+        @include for-md{
+            margin-top: vw2(20);
+        }
+        @include for-tiny-tablet{
+            margin-top: vw3(20);
+        }
+    }
 }
