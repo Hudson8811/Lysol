@@ -78,3 +78,16 @@ $('.js-to-game').click(function () {
   //   }
   
   // });
+
+  $('.viruses-icon').click(function(e){
+    e.preventDefault();
+    if(!$(this).hasClass('is-active')){
+      $('.viruses-icon').removeClass('is-active');;
+      $('.viruses-card').hide();
+      $(this).addClass('is-active');
+      $(this).siblings('.viruses-card').show();
+    } else{
+      $(this).removeClass('is-active');
+      $(this).siblings('.viruses-card').hide();
+    }
+  });
