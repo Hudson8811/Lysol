@@ -2,6 +2,7 @@
 @import "_libs";
 @import "_fonts";
 @import "_global";
+@import "_landing";
 html, body {
     overflow: hidden !important;
     @include for-md{
